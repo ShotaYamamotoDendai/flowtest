@@ -1,0 +1,212 @@
+body{
+	margin: 0;
+}
+
+div.main{
+	color: #fefff7;
+	margin: 0;
+	width: 900px;
+	margin: 0 auto;
+	height: 1000px;
+}
+
+/**************/
+/* header部分 */
+/**************/
+
+header.menu{
+	background: #2a2a72;
+	background-size: contain;
+    height: 60px;
+    position: relative;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888888;
+	display: block;
+	margin: 0;
+}
+
+h1.title{
+	display: inline-block;
+    height: 45px;
+    left: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    width: 360px;
+    margin: 0;
+}
+
+ul.navi{
+	list-style: none;
+    display: inline-block;
+    position: absolute;
+	margin: 0;
+	padding: 0 2.5px;
+    right: 210px;
+    top: 0;
+    white-space: nowrap;
+}
+
+li.navi_item{
+	display: inline-block;
+	list-style-type: none;
+
+	/*アニメーション*/
+	-webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+li.navi_item:hover {
+	background-color: #49d7ff;
+}
+
+a.navi_item_link {
+	color: #fefff7;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+a.navi_item_link:hover {
+	color: #fefff7;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+a.navi_item_link > img {
+	padding-top: 12.5px;
+	padding-bottom: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+li.navi_item:hover > ul.sub_navi{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+ul.sub_navi{
+	background-color: #49d7ff;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	display: none;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	width: 165px;
+	visibility: hidden;
+	padding: 0;
+
+	/*アニメーション*/
+	-webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+li.sub_navi_item{
+	display: block;
+}
+
+li.sub_navi_item:hover > a.sub_navi_item_link{
+	background-color: rgba( 255, 255, 255, 0.4);
+}
+
+li.sub_navi_item:hover > a.sub_navi_item_link > .caret{
+	border-top-color: rgb( 255, 255, 255 );
+}
+
+a.sub_navi_item_link{
+	color: #fefff7;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+
+a.sub_navi_item_link:hover{
+	color: #fefff7;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+
+/********************************/
+/* TOUKETU HYOUZI SUB NAVI ITEM */
+/********************************/
+
+li.navi_item_freeze:hover > ul.sub_navi{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+li.sub_navi_item_freeze{
+	display: block;
+	background-color: #aaaaaa;
+}
+
+/*li.sub_navi_item_freeze:hover > a.sub_navi_item_link_freeze{
+	background-color: rgba( 255, 255, 255, 0.4);
+}
+
+li.sub_navi_item_freeze:hover > a.sub_navi_item_link_freeze > .caret{
+	border-top-color: rgb( 255, 255, 255 );
+}*/
+
+a.sub_navi_item_link_freeze{
+	color: #fefff7;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+
+a.sub_navi_item_link_freeze:hover{
+	color: #fefff7;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+
+/************************************************************/
+
+span.caret{
+	border-top: 4px solid #fefff7;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: '';
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+
+	/*アニメーション*/
+	-webkit-transition: color 0.1s linear;
+	        transition: color 0.1s linear;
+}
+
+div.user_info{
+	font-weight: bold;
+	display: inline-block;
+    right: 10px;
+    position: absolute;
+	padding: 2.5px;
+	color: #fefff7;
+    white-space: nowrap;
+	/*縦の中央ぞろえ*/
+	line-height: 60px;
+	text-align:center;
+}
+
+/************************************************************/
+
+/*フローチャート部分*/
+
+
+      
+   
+
+.conhed{
+	z-index: 1000;
+	color: #000000;
+}
